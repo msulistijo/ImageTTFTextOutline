@@ -1,4 +1,5 @@
 <?php
+//testing making some changes
 
 function imagettftextoutline(&$im,$size,$angle,$x,$y,&$col,
             &$outlinecol,$fontfile,$text,$width) {
@@ -50,17 +51,6 @@ $text_height = abs($type_space[5] - $type_space[1]) + 10;
 $position_center = ceil(($width - $text_width) / 2);
 //$position_middle = ceil(($height - $text_height) / 2);
 
-/*
-echo "font_loaded:" . $font_loaded;
-echo "font_width:" . $font_width;
-echo "font_height:" . $font_height;
-echo "font_loaded:" . $font_loaded;
-echo "text_width:" . $text_width;
-echo "text_height:" . $text_height;
-echo "position center:" . $position_center;
-echo "position middle:" . $position_middle;
-*/
-
 imagettftextoutline(
         $im,           // image location ( you should use a variable )
         $font_size,            // font size
@@ -74,6 +64,7 @@ imagettftextoutline(
         2              // outline width
 );
 
+//testing making some changes
 
 header('Content-type: image/png');
 imagepng($im);
